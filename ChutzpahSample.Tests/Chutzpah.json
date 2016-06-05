@@ -1,0 +1,32 @@
+﻿{
+  "Framework": "jasmine",
+  "References": [
+    {
+      "Exclude": "*.d.ts"
+    },
+    {
+      "Path": "../chutzpahsample/scripts/app",
+      "Include": "*.js"
+    }
+  ],
+  "Tests": [
+    {
+      "Path": "Content/jasmine",
+      "Exclude": "*"
+    },
+    {
+      "Path": "Scripts-Src",
+      "Include": "*Tests.js",
+      "Exclude": "*.d.ts"
+    }
+  ],
+  "EnableCodeCoverage": "true",
+
+  "TypeScriptCodeGenTarget": "ES5",
+  "Compile": {
+    "Extensions": [ ".ts" ],
+    "ExtensionsWithNoOutput": [ ".d.ts" ],
+    "Executable": "compile.bat",
+    "UseSourceMaps": true
+  }
+}
